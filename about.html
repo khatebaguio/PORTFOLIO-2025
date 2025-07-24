@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About Me | My Portfolio 2025</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main">
+
+        <div class="navbar">
+            <img src="File - Logo.png" class="logo" alt="Logo">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html" class="active">About Me</a></li>
+                <li><a href="social-media.html">Social Media</a></li>
+            </ul>
+        </div>
+
+        <div class="info">
+            <h1>About Me</h1>
+            <strong>  <p>Hello! I'm <strong>Khate Charmeille Baguio</strong>, a passionate student currently taking up <strong>BSIT 2B</strong>.</p>
+            <p>I created this portfolio to share more about who I am, my interests, and my journey as a tech enthusiast.</p>
+            <p>Aside from coding and studying tech, I enjoy connecting with people and expressing myself creatively online.<br>
+                 This site is a reflection of me — what I do, what I love, and how I grow.<br></p><h2></h2>
+            <p>Thanks for visiting my website! 🩵</p > </strong>
+        </div>
+
+    </div>
+
+    <!-- Ionicons (Optional for icons) -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- Active link script -->
+    <script>
+        const navLinks = document.querySelectorAll(".navbar ul li a");
+        const currentUrl = window.location.pathname;
+
+        navLinks.forEach(link => {
+            const linkPage = new URL(link.href).pathname;
+            if (linkPage === currentUrl) {
+                link.classList.add("active");
+            }
+        });
+    </script>
+
+</body>
+</html>
