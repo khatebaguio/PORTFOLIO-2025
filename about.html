@@ -29,13 +29,13 @@
 
     </div>
 
-    <!-- Ionicons (Optional for icons) -->
+    
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-    <!-- Navbar scripts -->
+
     <script>
-        // Force reload on Home link if already on homepage
+    
         document.querySelectorAll('.navbar ul li a[href="index.html"]').forEach(link => {
             link.addEventListener('click', (e) => {
                 if (window.location.pathname.endsWith('index.html') || window.location.pathname === '/') {
@@ -45,7 +45,7 @@
             });
         });
 
-        // Highlight active link
+
         const navLinks = document.querySelectorAll(".navbar ul li a");
         const currentPage = window.location.pathname.split("/").pop() || "index.html";
 
